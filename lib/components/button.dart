@@ -4,7 +4,7 @@ class MyButton extends StatelessWidget {
   final Color? color;
   final void Function()? onTap;
 
-  MyButton({
+  const MyButton({
     super.key,
     required this.color,
     required this.onTap,

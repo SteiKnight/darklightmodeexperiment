@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Theme.of(context).colorScheme.surface,
         body: Center(
           child: MyBox(
-            color: Colors.deepPurple[300],
+            color: Theme.of(context).colorScheme.primary,
             child: MyButton(
               color: Colors.deepPurple[200],
               onTap:(){}
