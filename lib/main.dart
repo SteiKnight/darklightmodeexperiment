@@ -1,14 +1,15 @@
 import 'package:darklightmodeexperiment/pages/home_page.dart';
-import 'package:darklightmodeexperiment/theme/theme.dart';
 import 'package:darklightmodeexperiment/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-    create: (context) => ThemeProvider(),
-    child: const MyApp(),
-  ));
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => ThemeProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +21,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: HomePage(),
       theme: Provider.of<ThemeProvider>(context).themeData,
-
     );
   }
 }
